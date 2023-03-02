@@ -3,13 +3,16 @@ import { useState } from "react";
 import Card from "./components/card/Card";
 import Button from "./components/button/Button";
 import dataList from "./assets/data.json";
-import { imgObjet as imgList } from "./assets/img";
+import { imgObjet as imgList, imgObjet } from "./assets/img";
 function App() {
-  const [backgroundImg, setBackgroundImg] = useState(0);
+  const [backgroundImg, setBackgroundImg] = useState(
+    Math.floor(Math.random() * imgObjet.length)
+  );
 
   const backgroundChange = () => {
-    const newBackgroundImg = backgroundImg + 1;
-    if (newBackgroundImg >= imgList.length) setBackgroundImg(0);
+    const newBackgroundImg = Math.floor(Math.random() * imgObjet.length);
+    if (newBackgroundImg === backgroundImg)
+      setBackgroundImg(Math.floor(Math.random() * imgObjet.length));
     else setBackgroundImg(newBackgroundImg);
   };
 
