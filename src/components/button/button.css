@@ -1,0 +1,13 @@
+.btn {
+  border: 1px solid lightslategray;
+  width: 100px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.33) 100%
+  );
+  border-radius: 39px;
+}
+.btn:hover {
+  background: linear-gradient(180deg, gray 0%, rgba(255, 255, 255, 0.33) 100%);
+}

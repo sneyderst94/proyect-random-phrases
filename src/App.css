@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.App h1 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-white: 700;
+  font-size: 6rem;
+  font-family: "Lobster", cursive;
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+@media (max-width: 992px) {
+  .App h1 {
+    font-size: 4rem;
+  }
+}
